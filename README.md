@@ -14,8 +14,8 @@ Javascript e HTML: pratique lógica com desenhos, animações e um jogo
   <li><strong>Apenas visualização:</strong> A cada 3 segundos a tela irá alternar entre a bandeira do Brasil e da Alemanha.</li>
 </ul>
 <div display="flex">
-  <img width="500px" src="https://user-images.githubusercontent.com/102433664/207157174-418fd22e-69fd-4538-ab98-1c5c02401a44.png" />
-  <img width="500px" src="https://user-images.githubusercontent.com/102433664/207157148-f69486f8-17db-43a4-b1ac-daf3623139e3.png" />
+  <img width="200px" src="https://user-images.githubusercontent.com/102433664/207157174-418fd22e-69fd-4538-ab98-1c5c02401a44.png" />
+  <img width="200px" src="https://user-images.githubusercontent.com/102433664/207157148-f69486f8-17db-43a4-b1ac-daf3623139e3.png" />
 </div>
 
 <h3>Bolinha pulsando:</h3>
