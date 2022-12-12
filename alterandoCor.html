@@ -1,0 +1,54 @@
+<canvas width="600" height="400"></canvas>
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+<script>
+    
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = "lightgray";
+        pincel.fillRect(0,0,600,400);
+
+/*         function exibeAlerta(){
+            alert ("Cliquei")
+        } */
+
+        var cores = ["lightpink", "lightsalmon", "lightseagreen", "lightskyblue", "lightcoral"]
+        var contador = 0
+
+        function desenhaCirculo(evento){
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = cores[contador]
+            pincel.beginPath();
+            pincel.arc(x,y, 10, 0, 2 * 3.14);
+            pincel.fill()
+        }
+
+        tela.onclick = desenhaCirculo
+
+        function mudaCor(){
+            contador ++
+            if(contador >= cores.length){
+                contador = 0
+            }
+
+            alert("A cor do pincel foi alterada!");
+            return false;
+        }
+
+        tela.oncontextmenu = mudaCor;
+
+</script>
+
+<h3 class="titulo">Como usar:</h3>
+<div class="paragrafo">
+    <ul>
+        <li><span>Como desenhar: </span> Você só irá conseguir desenhar através de circulos, basta clicar em qualquer
+        lugar dentro do retangulo cinza.</li>
+        <li><span>Como alterar a cor: </span> Basta clicar com o botão esquedo do mouse no retangulo cinza, um alerta irá informar que a cor foi alterada.</li>
+        <li><span>Cores disponíveis: </span> Rosa, salmão, verde, azul e coral.</li>
+
+
+    </ul>
+</div>
